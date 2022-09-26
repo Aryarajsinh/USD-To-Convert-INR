@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class USD2INRAToINR2USD {
+    public static void main(String[] args) {
+        System.out.println ("Enter the value");
+        Scanner sc = new Scanner (System.in);
+        float n = sc.nextFloat ();
+        System.out.println ("Enter 1 than convert Dollar to Rupees & Enter 2 than convert Rupees to Dolar\n");
+        System.out.println ("Enter Your choice:");
+        int m = sc.nextInt ();
+        switch (m) {
+            case 1: {
+                System.out.println ("Enter the value in Dollar :" +"\t"+ n);
+                System.out.println ("Convert Dollar to Rupees :" +"\t"+ n / 73.925);
+                break;
+            }
+            case 2: {
+                System.out.println ("Enter the value in Ruppees :"+"\t"+ n);
+                System.out.println ("Convert ruppes to Dollar : "+"\t"+ n * 73.925);
+                break;
+            }
+        }
+    }
+}
+
+
